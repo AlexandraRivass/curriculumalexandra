@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* TODO ESTO CONTIENE EL FONDO DE LOS ICONOS Y EL COLOR */
+.negro{
+    background-color: rgb(0, 0, 0);
+    padding: 20px; /* Ajusta el relleno para espaciar el contenido */
+}
+
+.icono-blanco{
+    color: white;
+    font-size: 24px; /* tamaño del icono */
+    margin: 10px; /* Ajusta el margen para espaciar los iconos */
+}
+
+/* TODO ESTO CONTIENE EL HEADER (LOGO, INFO ETC) */
+.center{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    align-items: center;
+    text-align: center;
+}
+
+
+.container {
+    background: linear-gradient(to bottom right, #fefff5, #f4e5e5);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.titulo-seccion {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 1.5rem auto; /* centra el bloque */
+}
+
+.titulo-seccion::after {
+    content: "";
+    position: absolute;
+    left: 50%;               /* empieza desde el centro */
+    transform: translateX(-50%); /* ajusta para que quede centrada */
+    bottom: -5px;
+    width: 100%;             /* largo de la línea */
+    height: 3px;
+    background-color: #db464b;
+    border-radius: 2px;
+}
+.competencias {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .competencias h2 {
+    text-align: center;
+    color: #00d4ff;
+    margin-bottom: 30px;
+  }
+
+  .barra {
+    margin-bottom: 20px;
+  }
+
+  .etiqueta {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+ 
+  /* LA BARRITA */
+  .progreso {
+    background-color: #797070;
+    border-radius: 20px; /*Borde de la barra*/
+  }
+
+  .progreso-fill {
+    height: 100%;
+    text-align: right; /*El porciento se pone a la derecha*/
+    padding-right: 10px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 20px;
+  }
+
+/* TODO ESTO ES EL RELLENO DE LOS COLORES */
+  .html { width: 80%; background-color: #ff5e5e; }
+  .css { width: 70%; background-color: #9bafff; }
+  .redes { width: 60%; background-color: #6adb6e; }
+  .sistemas { width: 50%; background-color: #df6bff; }
+  .seguridad { width: 60%; background-color: #e6a748; }
+
+iframe {
+    margin-top: 3%;
+}
+
+@media (max-width: 500px) {
+    .negro{
+        background-color: rgb(0, 0, 0);
+        padding: 20px; /* Ajusta el relleno para espaciar el contenido */
+        text-align: center;
+    }
+    
+  }
