@@ -43,7 +43,7 @@ body {
 .titulo-seccion {
     position: relative;
     display: inline-block;
-    margin: 0 auto 1.5rem auto; /* centra el bloque */
+    margin: 0 auto 1rem auto; /* centra el bloque */
 }
 
 .titulo-seccion::after {
@@ -57,28 +57,29 @@ body {
     background-color: #db464b;
     border-radius: 2px;
 }
+
 .competencias {
     max-width: 600px;
     margin: auto;
-  }
+}
 
-  .competencias h2 {
+.competencias h2 {
     text-align: center;
     color: #00d4ff;
     margin-bottom: 30px;
-  }
+}
 
-  .barra {
+.barra {
     margin-bottom: 20px;
   }
 
-  .etiqueta {
+.etiqueta {
     margin-bottom: 5px;
     font-weight: bold;
-  }
+}
  
   /* LA BARRITA */
-  .progreso {
+.progreso {
     background-color: #797070;
     border-radius: 20px; /*Borde de la barra*/
   }
@@ -99,10 +100,32 @@ body {
   .redes { width: 60%; background-color: #6adb6e; }
   .sistemas { width: 50%; background-color: #df6bff; }
   .seguridad { width: 60%; background-color: #e6a748; }
+  .inglés{ width: 50%; background-color: #30dbc2; }
 
-iframe {
-    margin-top: 3%;
+
+
+
+/* CONTENIDO DEL SOBRE MI */
+.perfil li {
+  margin: 12px 0;
 }
+
+/* PARA QUE NO SALGA LOS PUNTOS */
+.perfil ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* COLOR ICONO ESTRELLA */
+.fa-star{
+  color: #9f1f6e;
+}
+
+/* VIDEO */
+iframe {
+  margin-top: 3%;
+}
+
 
 @media (max-width: 500px) {
     .negro{
