@@ -10,6 +10,8 @@ body {
     font-style: normal;
 }
 
+/* AQUI COMIENZA LA PRIMERA PAGINA INDEX.HTML */
+
 /* TODO ESTO CONTIENE EL FONDO DE LOS ICONOS Y EL COLOR */
 .negro{
     background-color: rgb(0, 0, 0);
@@ -125,13 +127,69 @@ body {
 iframe {
   margin-top: 3%;
 }
+ 
+/* Y AQUI ACABA TODO DEL INDEX.HTML */
 
 
+
+/* AQUI COMIENZA TOODO LA PAGINA DE ESTUDIOS */
+.tituloestudios{
+  margin-top: 6%;
+  text-align: center;
+  margin-bottom: 6%;
+  font-size: 5%;
+}
+.tituloestudios {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.tituloestudios h1 {
+  font-size: 30.5em;
+  color: #2c3e50;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #3498db;
+  display: inline-block;/* Hace que la linea azul ocupe solo la palabra */
+  padding-bottom: 10px; /*Que tenga distancia de abajo */
+}
+.tituloformacion{
+  text-align: center;
+  margin-bottom: 4%;
+}
+/* Y AQUI ACABA TODO DEL ESTUDIOS */
+
+
+/* AQUI COMIENZA TOODO LA PAGINA DE EXPERENCIA LABORAL*/
+
+.custom-carousel {
+  max-width: 800px; /* Ancho máximo del carrusel */
+  margin: auto; /* Centrado horizontal */
+  border-radius: 15px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta bordes  */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.carousel-img {
+  height: 400px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Recorta la imagen manteniendo proporción para llenar el contenedor */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(31%) sepia(79%) saturate(5372%) hue-rotate(261deg) brightness(91%) contrast(102%);
+}
+
+/* Y AQUI ACABA TODO DE EXPERENCIA LABORAL */
+
+
+/* AQUI ESTA EL MEDIAQUERY */
 @media (max-width: 500px) {
     .negro{
         background-color: rgb(0, 0, 0);
         padding: 20px; /* Ajusta el relleno para espaciar el contenido */
         text-align: center;
     }
-    
+
   }
