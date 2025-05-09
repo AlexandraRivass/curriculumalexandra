@@ -1,7 +1,8 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0; /*Eliminar espacio entre elementos*/
+    padding: 0; /*Eliminar espacio entre elementos*/
+    box-sizing: border-box; 
+
   }
 
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 .icono-blanco{
-    color: white;
+    color: white; /*Color de letra*/
     font-size: 24px; /* tamaño del icono */
     margin: 10px; /* Ajusta el margen para espaciar los iconos */
 }
@@ -29,46 +30,46 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    align-items: center;
-    text-align: center;
+    align-items: center; /*Alinear elementos verticalmente*/
+    text-align: center; /*Alinear elementos horizontalmente*/
 }
 
 
 .container {
     background: linear-gradient(to bottom right, #fefff5, #f4e5e5);
-    padding: 2rem;
-    border-radius: 10px;
+    padding: 2rem; /*Espacio entre bordes y contenido*/
+    border-radius: 10px; /*Borde redondeado de la caja*/
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 4%; /*Espacio entre contenido y borde superior*/
+    margin-bottom: 4%; /*Espacio abajo*/
 }
 .titulo-seccion {
-    position: relative;
-    display: inline-block;
+    position: relative; /*Posicionar elemento*/
+    display: inline-block; /*Alinear elementos*/
     margin: 0 auto 1rem auto; /* centra el bloque */
 }
 
 .titulo-seccion::after {
     content: "";
-    position: absolute;
+    position: absolute; /*Posicionar elemento*/
     left: 50%;               /* empieza desde el centro */
     transform: translateX(-50%); /* ajusta para que quede centrada */
     bottom: -5px;
     width: 100%;             /* largo de la línea */
-    height: 3px;
-    background-color: #db464b;
-    border-radius: 2px;
+    height: 3px;             /* altura de la línea */
+    background-color: #db464b; /*Color de la línea*/
+    border-radius: 2px; /*Borde redondeado de la linea*/
 }
 
 .competencias {
-    max-width: 600px;
+    max-width: 600px; /*Ancho máximo del contenido*/
     margin: auto;
 }
 
 .competencias h2 {
     text-align: center;
     color: #00d4ff;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /*Espacio abajo*/
 }
 
 .barra {
@@ -76,8 +77,8 @@ body {
   }
 
 .etiqueta {
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 5px; /*Espacio entre el texto y el borde*/
+    font-weight: bold; /*Estilo de letra*/
 }
  
   /* LA BARRITA */
@@ -90,19 +91,19 @@ body {
     height: 100%;
     text-align: right; /*El porciento se pone a la derecha*/
     padding-right: 10px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 20px;
-    border-radius: 20px;
+    color: #fff; /*Color de letra*/
+    font-size: 14px; /*Tamaño de la letra*/
+    line-height: 20px; /*Altura de la letra*/
+    border-radius: 20px; /*Borde redondeado de la barra*/
   }
 
 /* TODO ESTO ES EL RELLENO DE LOS COLORES */
-  .html { width: 80%; background-color: #ff5e5e; }
-  .css { width: 70%; background-color: #9bafff; }
-  .redes { width: 60%; background-color: #6adb6e; }
-  .sistemas { width: 50%; background-color: #df6bff; }
-  .seguridad { width: 60%; background-color: #e6a748; }
-  .inglés{ width: 50%; background-color: #30dbc2; }
+  .html { width: 80%; background-color: #ff5e5e; } /*Tamaño y color de fondo de la linea*/
+  .css { width: 70%; background-color: #9bafff; }/*Tamaño y color de fondo de la linea*/
+  .redes { width: 60%; background-color: #6adb6e; } /*Tamaño y color de fondo de la linea*/
+  .sistemas { width: 50%; background-color: #df6bff; }/*Tamaño y color de fondo de la linea*/
+  .seguridad { width: 60%; background-color: #e6a748; }/*Tamaño y color de fondo de la linea*/
+  .inglés{ width: 50%; background-color: #30dbc2; }/*Tamaño y color de fondo de la linea*/
 
 
 
@@ -125,7 +126,7 @@ body {
 
 /* VIDEO */
 iframe {
-  margin-top: 3%;
+  margin-top: 3%; /*Margen arriba*/
 }
  
 /* Y AQUI ACABA TODO DEL INDEX.HTML */
@@ -133,31 +134,46 @@ iframe {
 
 
 /* AQUI COMIENZA TOODO LA PAGINA DE ESTUDIOS */
+.edu-card {
+  background-color: #f9f9ff; /* Fondo suave */
+  border: 2px solid #cbd5e0; /* Borde gris claro */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.edu-card:hover {
+  transform: scale(1.01); /*Transformar al pasar el mouse*/
+}
 .tituloestudios{
   margin-top: 6%;
   text-align: center;
-  margin-bottom: 6%;
-  font-size: 5%;
+  margin-bottom: 6%;  /*Espacio abajo*/
+  font-size: 5%; /*Tamaño letra*/
 }
 .tituloestudios {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 30px; /*Margen arriba*/
   margin-bottom: 20px;
 }
 
 .tituloestudios h1 {
   font-size: 30.5em;
   color: #2c3e50;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-weight: bold; /*Estilo de letra*/
+  text-transform: uppercase; /*Estilo de letra*/
+  letter-spacing: 2px; /*Espacio entre letras*/
   border-bottom: 3px solid #3498db;
   display: inline-block;/* Hace que la linea azul ocupe solo la palabra */
   padding-bottom: 10px; /*Que tenga distancia de abajo */
 }
 .tituloformacion{
-  text-align: center;
+  text-align: center; /*Alinear elementos*/
   margin-bottom: 4%;
+}
+.titulosmedio{
+  text-align: center;
+  margin-bottom: 2%;
 }
 /* Y AQUI ACABA TODO DEL ESTUDIOS */
 
@@ -172,6 +188,20 @@ iframe {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
+.styled-img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid #5e1b22; /*borde redondeado*/
+  transition: transform 0.3s ease; /*Animación*/
+  display: inline-block; /* NECESARIO para text-center funcione */
+}
+
+.styled-img:hover {
+  transform: scale(1.03); /* Efecto zoom suave al pasar el mouse */
+}
+
 .carousel-img {
   height: 400px; /* Altura fija para todas las imágenes */
   object-fit: cover; /* Recorta la imagen manteniendo proporción para llenar el contenedor */
@@ -182,6 +212,50 @@ iframe {
 }
 
 /* Y AQUI ACABA TODO DE EXPERENCIA LABORAL */
+
+/* PARTE DEL FOOTER */
+
+
+
+
+/* AQUI ACABA EL FOOTER */
+.fondonegro{
+    background-color: #2c2c2c; /*Color de fondo*/
+
+}
+.footer {
+  width: 100%;
+  color: #ffffff;
+  padding: 20px 0; /*Espacio entre bordes y contenido*/
+  text-align: center;
+  margin-top: 20px;
+  position: relative; /*Posicionar elemento*/
+  bottom: 0; /*Posicionar elemento*/
+  left: 0; /*Posicionar elemento*/
+  padding: 20px 0; /* <-- Esto es el padding */
+}
+
+.footer-content {
+  max-width: 1200px; /*Ancho máximo del contenido*/
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  color: #b480ff; /* Morado claro */
+  margin: 0 10px;
+  font-size: 20px; /*Tamaño de la letra*/
+  transition: color 0.3s; /*Animación*/
+}
+
+.footer-icons a:hover {
+  color: #ffffff;
+}
+
 
 
 /* AQUI ESTA EL MEDIAQUERY */
